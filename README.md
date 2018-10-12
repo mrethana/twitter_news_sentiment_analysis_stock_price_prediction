@@ -39,7 +39,7 @@ Once we gathered all tweets and articles we created multiple features for our mo
 Below is a heat map of the pearson correlation between a stock going up in a 30 minute interval and each feature. This shows:
   1. For tweets the highest positive correlation between a stock going up is the average sentiment the night before and the morning of.
   2. For news articles the highest positive correlation between a stock going up is compounded score over the past day.
-    + On a source by source the one day Wired, two day Techcrunch and one day New York times sentiment had the highest correlation
+      + On a source by source the one day Wired, two day Techcrunch and one day New York times sentiment had the highest correlation
 
 ![alt text](https://github.com/NaokoSuga/twitter_news_sentiment_analysis_stock_price_prediction/blob/master/Screenshots/heatmap.png?raw=True)
 
