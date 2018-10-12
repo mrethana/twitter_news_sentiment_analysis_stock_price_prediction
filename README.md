@@ -39,13 +39,13 @@ Once we gathered all tweets and articles we created multiple features for our mo
 Below is a heat map of the pearson correlation between a stock going up in a 30 minute interval and each feature. This shows:
   1. For tweets the highest positive correlation between a stock going up is the average sentiment the night before and the morning of.
   2. For news articles the highest positive correlation between a stock going up is compounded score over the past day.
-      + On a source by source the one day Wired, two day Techcrunch and one day New York times sentiment had the highest correlation
+      + On a source by source basis the one day Wired, two day Techcrunch and one day New York times sentiment had the highest correlation with a stock price going up.
 
 ![alt text](https://github.com/NaokoSuga/twitter_news_sentiment_analysis_stock_price_prediction/blob/master/Screenshots/heatmap.png?raw=True)
 
 ### Classification Models
 
-NOTE: Our data was very limited due the fact that you can only pull tweets for the past week if using the free membership of twitter's API. We identify that our models are overfit even when using cross validation as we had very high dimensionality post feature engineering but only a weeks worth of data points.
+NOTE: Our data was very limited due the fact that you can only pull tweets for the past week if using the free membership of twitter's API. We identify that our models are overfit even when using cross validation as we had very high dimensionality post feature engineering but only a weeks worth of data points (stock price at a given 30 minute interval during market hours).
 
 Steps to fix this moving forward:
 1. Add more data by adding tweets to a database as they come in
@@ -57,7 +57,7 @@ Adaptive boosting and Gradient Boosting were our most accurate models and had th
 
 ![alt text](https://github.com/NaokoSuga/twitter_news_sentiment_analysis_stock_price_prediction/blob/master/Screenshots/auc.png?raw=True)
 
-As you can see in the discrepancy between the train accuracy and test accuracy our models were overfit. We need to add more data to work through this and reduce the bias.
+As you can see based off the discrepancy between the train accuracy and test accuracy, our models were overfit. We need to add more data to work through this and reduce the bias.
 
 ### Feature Importances
 
@@ -65,7 +65,7 @@ Although the models were overfit we did gain some interesting insights from the 
 
 #### 1. All Features Included
 
-Below shows the feature importances of all features included. Clearly the standard stock market metrics (black) are still the most important regardless of the public sentiment.
+Below shows the feature importances of all features included. Clearly the standard stock market metrics (black columns) are still the most important regardless of the public sentiment.
 
 ![alt text](https://github.com/NaokoSuga/twitter_news_sentiment_analysis_stock_price_prediction/blob/master/Screenshots/allfeat.png?raw=True)
 
