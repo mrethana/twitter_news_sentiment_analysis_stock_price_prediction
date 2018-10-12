@@ -4,11 +4,11 @@
 
 
 ## Summary
-For my Mod 3 Project my partner and I analyzed the impact the public sentiment has on a stock price. We analyzed 3 major companies (Netflix, Facebook and Apple). We experimented with several shallow learning classification models and found that Adaptive Boosting and Gradient Boosting produced the best accuracy.
+For our Mod 3 Project my partner and I analyzed the impact the public sentiment has on a stock price. We analyzed 3 major companies (Netflix, Facebook and Apple). We experimented with several shallow learning classification models and found that Adaptive Boosting and Gradient Boosting produced the best accuracy.
 
 
 ## Objectives
-1. Find out which News sources overall sentiment were the most impactful when predicting if a stock price would increase or decrease
+1. Find out which News source's overall sentiment were the most impactful when predicting if a stock price would increase or decrease
 
 2. See if twitter sentiment has more of an impact than reputable news sources
 
